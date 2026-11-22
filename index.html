@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yann Escobar — Editor de vídeo</title>
+    <meta name="description" content="Portfólio Yann Escobar, editor de vídeo">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+ 
+    <!-- NAVEGAÇÃO (sticky, vidro) -->
+    <header class="topo">
+        <nav class="nav container" aria-label="Principal">
+            <a class="logo" href="#inicio">YANN ESCOBAR</a>
+            <ul>
+                <li><a href="#quem-sou">Quem sou</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <main id="conteudo">
+        <!-- HERO -->
+        <section class="hero" id="inicio">
+            <img src="img/BGPortfolio.png" alt="IMagem de fundo do portfólio" class="hero-bg" loading="lazy">
+            <h1>Yann <span>Escobar</span></h1>
+        </section>
+
+        <section class="hero-info">
+            <div class="container">
+                <p class="sub">Editor</p>
+                <p class="lema">Imagine Sísifo feliz!</p>
+            </div>
+        </section>
+ 
+        <!-- 1. QUEM SOU EU -->
+        <section class="secao" id="quem-sou" aria-labelledby="t-quem">
+            <div class="container reveal">
+                <h2 class="titulo-secao" id="t-quem">Quem sou eu</h2>
+ 
+                <div class="quem">
+                    <div class="vidro quem-texto">
+                        <p>Tenho 19 anos e edito vídeos, sou entusiasta de cinema, e busco transmitir isso no meu trabalho, com cortes, efeitos e identidade visual única, para contar qualquer hitória que você imagine.</p>
+                        <p>Além de editor sou programador "front-end", e uso esse conhecimento na edição: direção visual, motion, som e narrativa, focando sempre na autenticidade.</p>
+                        <ul class="chips" aria-label="Posicionamento">
+                            <li>Ritmo</li>
+                            <li>Estética única</li>
+                            <li>Narrativa</li>
+                        </ul>
+                    </div>
+                    <img class="foto" src="img/PfpY.jpeg" alt="Retrato de Yann Escobar" width="220" height="220" loading="lazy">
+                </div>
+            </div>
+        </section>
+ 
+        <!-- 2. HABILIDADES -->
+        <section class="secao skills-secao" id="habilidades" aria-labelledby="t-hab" style="--n: 6">
+            <div class="skills-palco">
+                <div class="skills-cabeca container">
+                    <h2 class="titulo-secao" id="t-hab">Minhas habilidades</h2>
+                </div>
+        
+                <!-- Engrenagem de vidro. O formato é desenhado pelo script. -->
+                <div class="engrenagem" aria-hidden="true">
+                    <div class="engrenagem-vidro"></div>
+                    <svg class="engrenagem-contorno" viewBox="0 0 200 200" focusable="false">
+                        <path id="gear-path"></path>
+                    </svg>
+                </div>
+        
+                <div class="skills-lista container">
+                    <ul class="skills">
+                        <!-- --i = posição do card na roda (0, 1, 2...). --nivel = proficiência. -->
+                        <li class="skill vidro" style="--i: 0; --nivel: 90">
+                            <span class="skill-num" aria-hidden="true">01</span>
+                            <h3>Premiere Pro</h3>
+                            <div class="barra" aria-hidden="true"><i></i></div>
+                            <p class="nivel">Nível: <strong>90</strong>/100</p>
+                        </li>
+                        
+                        <li class="skill vidro" style="--i: 1; --nivel: 50">
+                            <span class="skill-num" aria-hidden="true">02</span>
+                            <h3>After Effects</h3>
+                            <div class="barra" aria-hidden="true"><i></i></div>
+                            <p class="nivel">Nível: <strong>50</strong>/100</p>
+                        </li>
+
+                        <li class="skill vidro" style="--i: 2; --nivel: 65">
+                            <span class="skill-num" aria-hidden="true">03</span>
+                            <h3>Color grading</h3>
+                            <div class="barra" aria-hidden="true"><i></i></div>
+                            <p class="nivel">Nível: <strong>65</strong>/100</p>
+                        </li>
+
+                        <li class="skill vidro" style="--i: 3; --nivel: 75">
+                            <span class="skill-num" aria-hidden="true">04</span>
+                            <h3>Edição de áudio</h3>
+                            <div class="barra" aria-hidden="true"><i></i></div>
+                            <p class="nivel">Nível: <strong>75</strong>/100</p>
+                        </li>
+
+                        <li class="skill vidro" style="--i: 4; --nivel: 40">
+                            <span class="skill-num" aria-hidden="true">05</span>
+                            <h3>Motion e Animação</h3>
+                            <div class="barra" aria-hidden="true"><i></i></div>
+                            <p class="nivel">Nível: <strong>40</strong>/100</p>
+                        </li>
+                        <li class="skill vidro" style="--i: 5; --nivel: 80">
+                            <span class="skill-num" aria-hidden="true">06</span>
+                            <h3>Roteiro e storytelling</h3>
+                            <div class="barra" aria-hidden="true"><i></i></div>
+                            <p class="nivel">Nível: <strong>80</strong>/100</p>
+                        </li>
+                    </ul>
+                </div>
+        
+            </div>
+        </section>
+ 
+        <!-- 3. MEUS TRABALHOS -->
+        <section class="secao" id="trabalhos" aria-labelledby="t-trab">
+            <div class="container reveal">
+                <h2 class="titulo-secao" id="t-trab">Meus Trabalhos</h2>
+ 
+                <div class="trabalhos">
+                    <article class="trabalho vidro">
+                        <div class="video-wrap">
+                            <button class="video-facade" type="button"
+                                    data-video-id="N-sZhAeKcjs"
+                                    data-title="Vídeo do canal YannOproprio, formato de gameplay no YouTube"
+                                    aria-label="Reproduzir vídeo: YannOproprio Gameplay">
+                                <span class="play" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
+                        <div class="trabalho-info">
+                            <p class="tag">Projeto próprio</p>
+                            <h3>Meu canal no YouTube</h3>
+                            <p>Criei o canal para aprimorar habilidades e falar do que eu gosto. Nesse canal sempre busco extrair o máximo do meu potencial.</p>
+                        </div>
+                    </article>
+
+                    <!-- Segundo vídeo-->
+
+                    <article class="trabalho vidro">
+                        <div class="video-wrap">
+                            <button class="video-facade" type="button"
+                                data-video-id="9FY46G49OEM"
+                                data-title="Vídeo do canal R1beiro, formato fandublagem"
+                                aria-label="Reproduzir vídeo: R1beiro Fandublagem Bill Cipher">
+                                <span class="play" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
+                        <div class="trabalho-info">
+                            <p class="tag">Vídeo longo</p> <!-- Tag depois Título e breve descrição para deixar o site enchuto -->
+                            <h3>Fandublagem com Modulação de voz</h3>
+                            <p>Nesse breve projeto meu desafio foi modular a voz do cliente com o personagem "Bill Cipher", desenvolvi um método de modulação de voz utilizando o software "Audacity".</p>
+                        </div>
+                    </article>
+
+                    <!-- Terceiro vídeo-->
+
+                    <article class="trabalho vidro">
+                        <div class="video-wrap">
+                            <button class="video-facade" type="button"
+                                data-video-id="-D0G8o2I0ZQ"
+                                data-title="Vídeo do canal R1beiro, formato fandublagem"
+                                aria-label="Reproduzir vídeo: R1beiro Fandublagem Bode Japeth">
+                                <span class="play" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
+                        <div class="trabalho-info">
+                            <p class="tag">Vídeo Longo</p>
+                                <h3>Fandublagem de Musical</h3>
+                                <p>Nesse cenário meu desafio foi tratar e mixar a voz do cliente, para atingir o mesmo resultado que a produção inicial.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- 4. CONTATO -->
+        <section class="secao" id="contato" aria-labelledby="t-contato">
+            <div class="container-reveal">
+                <h2 class="titulo-secao" id="t-contato">Contato</h2>
+ 
+                <div class="contato vidro">
+                    <p class="contato-chamada">Tem um projeto em mente? Me conta o básico e eu respondo.</p>
+                    <button class="btn btn-vermelho btn-grande" type="button" id="abrir-form" aria-haspopup="dialog">Enviar mensagem</button>
+ 
+                    <ul class="redes" aria-label="Redes sociais e e-mail">
+                        <li><a class="btn btn-vidro" href="https://www.instagram.com/yann.oproprio/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                        <li><a class="btn btn-vidro" href="https://www.youtube.com/channel/UCdgl21NpdBukNlVWkEwS85Q" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                        <li><a class="btn btn-vidro" href="https://github.com/YannEscobar" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a class="btn btn-vidro" href="mailto:seuemail@exemplo.com">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+    <footer class="rodape">
+        <p>© 2026 Yann Escobar </p>
+    </footer>
+ 
+    <!-- FORMULÁRIO (dialog nativo: foco preso, ESC fecha, acessível) -->
+    <dialog id="dialogo-contato" aria-labelledby="t-form">
+        <div class="dialogo-corpo">
+            <div class="dialogo-topo">
+                <h2 id="t-form">Vamos conversar</h2>
+                <button class="fechar" type="button" data-fechar aria-label="Fechar formulário">×</button>
+            </div>
+ 
+            <form id="form-contato" novalidate>
+                <div class="campo">
+                    <label for="assunto">Assunto</label>
+                    <input id="assunto" name="assunto" type="text" autocomplete="off" required aria-describedby="erro-assunto" placeholder="Ex.: edição de vídeo para YouTube">
+                    <p class="erro" id="erro-assunto" aria-live="polite"></p>
+                </div>
+ 
+                <div class="campo">
+                    <label for="nome">Seu nome</label>
+                    <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+                    <p class="erro" id="erro-nome" aria-live="polite"></p>
+                </div>
+ 
+                <div class="campo">
+                    <label for="contato-info">E-mail ou telefone</label>
+                    <input id="contato-info" name="contato" type="text" inputmode="email" autocomplete="email" required aria-describedby="dica-contato erro-contato">
+                    <p class="dica" id="dica-contato">Telefone com DDD, ex.: (11) 91234-5678</p>
+                    <p class="erro" id="erro-contato" aria-live="polite"></p>
+                </div>
+ 
+                <button class="btn btn-vermelho btn-grande" type="submit">Enviar</button>
+                <p class="status" id="status-form" role="status"></p>
+            </form>
+        </div>
+    </dialog>
+ 
+    <script src="js/script.js"></script>
+</body>
+</html>
