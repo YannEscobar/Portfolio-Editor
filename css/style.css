@@ -57,20 +57,6 @@ p + p { margin-top: 0.9em; }
     margin-inline: auto;
     padding-inline: var(--gutter);
 }
-
-.pular {
-    position: absolute;
-    left: 8px;
-    top: -60px;
-    z-index: 100;
-    background: var(--branco);
-    color: var(--preto);
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-weight: 600;
-}
-.pular:focus { top: 8px; }
- 
 /* Foco visível em tudo */
 :focus-visible {
     outline: 3px solid var(--roxo-claro);
@@ -136,6 +122,7 @@ EFEITO DE VIDRO
             NAV
 ============================
 */
+
 .topo {
     position: sticky;
     top: 0;
@@ -145,7 +132,6 @@ EFEITO DE VIDRO
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--borda-vidro);
 }
-
 .nav {
     display: flex;
     align-items: center;
@@ -284,7 +270,7 @@ h1 {
     ===========
      Seções 
     ===========
- */
+*/
 .secao { padding-block: clamp(56px, 10vw, 110px); }
  
 .titulo-secao {

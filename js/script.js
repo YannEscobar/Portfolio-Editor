@@ -50,6 +50,7 @@ if (temMouse && !reduzMovimento) {
 }
  
 /* ---------- 3. Scroll-spy ---------- */
+/* CONTROLA O FADE-IN E FADE-OUT DAS PÁGINAS, utilizando aria hidden */
 const linksNav = document.querySelectorAll('.nav a:not(.logo)');
 const idsSecoes = ['quem-sou', 'habilidades', 'trabalhos', 'contato'];
  
@@ -86,6 +87,8 @@ document.querySelectorAll('.video-facade').forEach((btn) => {
 });
  
 /* ---------- Formulário ---------- */
+
+// Validação de entrada
 const dialogo = document.getElementById('dialogo-contato');
 const btnAbrir = document.getElementById('abrir-form');
 const form = document.getElementById('form-contato');
@@ -100,11 +103,12 @@ dialogo.querySelector('[data-fechar]').addEventListener('click', () => dialogo.c
 dialogo.addEventListener('click', (e) => { if (e.target === dialogo) dialogo.close(); });
  
 const regras = {
+    // Define um mínimo de 3 caracteres
     assunto: (v) => v.trim().length >= 3 || 'Escreva um assunto com pelo menos 3 caracteres.',
     nome: (v) => v.trim().length >= 2 || 'Informe seu nome.',
     contato: (v) => {
         const t = v.trim();
-        const email = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(t);
+        const email = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(t); //Pelo menos 
         const digitos = t.replace(/\D/g, '');
         const telefone = /^[\d\s()+\-]+$/.test(t) && digitos.length >= 10 && digitos.length <= 13;
         return email || telefone || 'Use um e-mail válido ou um telefone com DDD.';
@@ -112,6 +116,7 @@ const regras = {
 };
  
 function validarCampo(input) {
+    //  Validação de campos
     const resultado = regras[input.name](input.value);
     const erro = document.getElementById('erro-' + input.id.replace('-info', ''));
     if (resultado === true) {
@@ -206,7 +211,7 @@ form.addEventListener('submit', (e) => {
         }
         d += `A ${rBase} ${rBase} 0 0 1 ${inicio} Z `;
 
-        // furo central (o fill-rule evenodd do mask faz o buraco)
+        // furo central 
         d += `M ${c + rFuro} ${c} A ${rFuro} ${rFuro} 0 1 0 ${c - rFuro} ${c} A ${rFuro} ${rFuro} 0 1 0 ${c + rFuro} ${c} Z`;
         return d;
     }
